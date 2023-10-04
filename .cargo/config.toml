@@ -1,4 +1,4 @@
-[target.'cfg(all(target_arch = "arm", target_os = "none"))']
+[target.thumbv7em-none-eabihf]
 runner = "probe-run --chip STM32F429ZITx"
 rustflags = [
     "-C",
@@ -17,3 +17,4 @@ target = "thumbv7em-none-eabihf" # Cortex-M4F and Cortex-M7F (with FPU)
 [alias]
 rb = "run --bin"
 rrb = "run --release --bin"
+#runner = "probe-run --chip STM32F429ZITx"

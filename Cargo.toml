@@ -12,19 +12,14 @@ documentation = "https://docs.rs/embedded-alloc"
 readme = "README.md"
 edition = "2018"
 
-keywords = [
-    "allocator",
-    "embedded",
-    "arm",
-    "riscv",
-    "cortex-m",
-]
+keywords = ["allocator", "embedded", "arm", "riscv", "cortex-m"]
 license = "MIT OR Apache-2.0"
 name = "embedded-alloc"
 version = "0.5.0"
 
 [dependencies]
 critical-section = "1.0"
+
 
 [dependencies.linked_list_allocator]
 default-features = false

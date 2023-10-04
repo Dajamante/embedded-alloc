@@ -19,13 +19,12 @@ version = "0.5.0"
 
 [dependencies]
 critical-section = "1.0"
+cortex-m-rt = "0.7"
+#stm32f4xx-hal = { version = "0.17", features = ["stm32f429"] }
+cortex-m = { version = "0.7.6", features = ["critical-section-single-core"] }
 
 
 [dependencies.linked_list_allocator]
 default-features = false
 version = "0.10.5"
 features = ["const_mut_refs"]
-
-[dev-dependencies]
-cortex-m = { version = "0.7.6", features = ["critical-section-single-core"] }
-cortex-m-rt = "0.7"
